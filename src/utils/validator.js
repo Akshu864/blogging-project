@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
- //we are validating functions
+ //we are validating functions//globally
 
 
  const isValid=function(value){

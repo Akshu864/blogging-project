@@ -38,7 +38,7 @@ if(!findAuthor){
 }
 
 if(!validator.isValid(category)){
-    return res.status(400).send({status:false,message:"Blog Title is required"})
+    return res.status(400).send({status:false,message:"category is required"})
 }
 //validation ends
 const blogData={

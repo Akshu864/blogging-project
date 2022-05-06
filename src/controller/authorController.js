@@ -62,7 +62,7 @@ let checkEmail = await authorModel.findOne({ email: req.body.email })
 
 
 const createNewAuthor= await authorModel.create(requestBody)
-      res.send({message:'Author successfully created',data:createNewAuthor});
+      res.status(201).send({message:'Author successfully created',data:createNewAuthor});
 
 }catch (error) {
     res.status(400).send({ status: false, error: error.message });
